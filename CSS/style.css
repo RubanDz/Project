@@ -6,6 +6,146 @@
 
 
 
+/* TODO!!!! бУРГЕР И МЕНЮ */
+
+
+  
+  header {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #4caf50;
+  }
+  
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .burger .line {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.4s ease;
+  }
+  
+  .burger .line:nth-child(1) {
+    top: 0;
+  }
+  
+  .burger .line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .burger .line:nth-child(3) {
+    bottom: 0;
+  }
+  
+
+  .burger.active .line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .burger.active .line:nth-child(2) {
+    opacity: 0;  
+  }
+  
+  .burger.active .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(51, 51, 51, 0.7);
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  
+    .nav-list li {
+      margin: 15px 0;
+      text-align: center;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TODO!!! Канвас */
 canvas {
     display: block;
