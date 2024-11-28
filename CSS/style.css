@@ -1,0 +1,261 @@
+/* body {
+    background-color: rgb(77, 91, 124);
+} */
+
+/* 4D5B7C */
+
+
+
+
+/* TODO!!! блок контактов в footer */
+.wrapper-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(249, 250, 254);
+}
+
+
+.wrapper-contact-networks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.wrapper-contact-networks > li > a > img {
+    width: 30px;
+    object-fit: contain; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! блок логотипа в futer */
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+}
+
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #4e8cff, #7f5af0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite; 
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+
+.digital {
+    font-size: 17px;
+    font-weight: bold;
+    color: #4D5B7C;
+}
+
+
+.expert {
+    font-size: 13px;
+    color: #4e8cff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.logo-header {
+    color: #4D5B7C;
+    font-weight: bold;
+}
+
+.logo-last {
+    color: #4e8cff;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper-contact-networks {
+        max-width: 20rem;              
+    }
+    .contact-info-policy {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! НИЖНЯЯ СТРОКА FUTER */
+.wrapper-contact-info {
+    width: 100%;
+    padding-top: 2rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(77, 91, 124);
+    
+}
+.wrapper-contact-info > p {
+    font-size: 0.8rem;
+}
+.contact-info-policy > a {
+    text-decoration: none;
+    color: rgb(77, 91, 124);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.contact-info-policy > a:hover {
+    color: #4e8cff;
+}
+    
+
+
+
+
+
+
+
+
+/* TODO!!! Блок куки */
+#cookie-banner.hidden {
+    display: none;
+}
+
+  
+  #cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgb(77, 91, 124, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  
+#cookie-banner button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .cookie-banner-text > a {
+      color: #4e8cff;
+    }
+    .cookie-banner-text > a:hover {
+      color: rgb(77, 91, 124);
+  }
+  
+  #cookie-banner button:hover {
+    background-color: #0056b3;
+  }
+  
+  #cookie-banner button:last-child {
+    background-color: #ED6A6A;
+  }
+  
+  #cookie-banner button:last-child:hover {
+    background-color: #c93b3b;
+  }
+
+  @media (max-width: 768px) {
+    #cookie-banner {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+     
+}
