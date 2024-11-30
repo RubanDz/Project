@@ -249,7 +249,7 @@
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgb(249, 250, 254);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding-top: 5rem;
@@ -303,6 +303,7 @@
 
 .step-content h2 {
   color: #d91719;
+  /* color: #4caf50; */
 }
 
 .step-content ul {
@@ -320,8 +321,10 @@
   content: '✔';
   position: absolute;
   left: 0;
-  color: green;
+  color: #4caf50;
+  font-weight: bold;  /* Сделаем символ жирным */
 }
+
 
 .participants {
   text-align: center;
@@ -329,6 +332,7 @@
 }
 .participants > h3 {
   color: rgba(47, 58, 79, 0.7);
+ 
 }
 
 .roles {
@@ -347,6 +351,9 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
   .steps-container {
       flex-direction: column; 
   }
@@ -368,9 +375,9 @@
       margin: 5px 0; 
   }
 
-  .title {
+  /* .title {
       font-size: 1rem; 
-  }
+  } */
   .step-content h2 {
     font-size: 0.8rem;
   }
