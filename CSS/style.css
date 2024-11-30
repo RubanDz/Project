@@ -245,11 +245,15 @@
 
 
 /* TODO!!! Этапы разработки сайта */
-
+/* .wrapper-step-dev {
+   background-color: rgb(249, 250, 254);
+} */
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: rgb(249, 250, 254);
+  /* background-color: rgb(249, 250, 254); */
+  /* background-color: #1E90FF; */
+  background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding-top: 5rem;
@@ -258,11 +262,35 @@
 .title {
   text-align: center;
   color: rgba(47, 58, 79, 0.7);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+
   
 }
 
+/* .title {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+} */
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
 .steps-container {
   display: flex;
+  /* background-color: #1E90FF; */
 }
 
 .steps {
@@ -322,8 +350,10 @@
   position: absolute;
   left: 0;
   color: #4caf50;
-  font-weight: bold;  /* Сделаем символ жирным */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Явно задаем шрифт */
 }
+
 
 
 .participants {
