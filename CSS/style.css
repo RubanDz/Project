@@ -139,7 +139,7 @@
 
 
 
-/* TODO!!! LOGO TELEGRAMM */
+/* TODO!!! LOGO TELEGRAMM WATSAPP */
 
 .header-logo-wrapper {
   display: flex;
@@ -205,69 +205,207 @@
 
 
 
-/* TODO!!! Канвас */
-canvas {
-    display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+/* TODO!!! Этапы разработки сайта */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding-top: 5rem;
+}
+
+.title {
+  text-align: center;
+  color: rgba(47, 58, 79, 0.7);
+  
+}
+
+.steps-container {
+  display: flex;
+}
+
+.steps {
+  width: 30%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.steps li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.steps li.active {
+  background-color: #d91719;
+  color: #fff;
+}
+
+.steps li:hover {
+  background-color: #d91719;
+  color: #fff;
+}
+
+.content {
+  width: 70%;
+  padding: 20px;
+}
+
+.step-content {
+  display: none; 
+}
+.step-content > p {
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+.step-content h2 {
+  color: #d91719;
+}
+
+.step-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.step-content li {
+  padding-left: 20px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.step-content li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.participants {
+  text-align: center;
+  margin-top: 20px;
+}
+.participants > h3 {
+  color: rgba(47, 58, 79, 0.7);
+}
+
+.roles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.role {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  margin: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+      flex-direction: column; 
   }
 
+  .steps, .content {
+      width: 100%; 
+  }
 
+  .steps li {
+      text-align: center; 
+      padding: 10px;
+  }
 
+  .roles {
+      flex-direction: column;
+  }
 
+  .role {
+      margin: 5px 0; 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TODO!!! Стрелка наверх фиксированная */
-
-.back-to-top {
-  position: fixed;
-  bottom: 30px; 
-  right: 10px; 
-  width: 50px;  
-  height: 50px; 
-  background-color: rgba(74, 199, 89, 0.4); 
-  color: white; 
-  text-align: center;
-  line-height: 50px; 
-  font-size: 24px; 
-  border-radius: 50%;
-  text-decoration: none; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: background-color 0.3s ease; 
-  z-index: 1000; 
+  .title {
+      font-size: 1rem; 
+  }
+  .step-content h2 {
+    font-size: 0.8rem;
+  }
 }
 
-.back-to-top:hover {
-  background-color: rgba(74, 199, 89, 0.8); 
-}
 
-.back-to-top:active {
-  transform: scale(0.8); 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,7 +496,80 @@ canvas {
 
 
 
-/* TODO!!! блок логотипа в futer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! Стрелка наверх фиксированная FOOTER */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px; 
+  right: 10px; 
+  width: 50px;  
+  height: 50px; 
+  background-color: rgba(74, 199, 89, 0.4); 
+  color: white; 
+  text-align: center;
+  line-height: 50px; 
+  font-size: 24px; 
+  border-radius: 50%;
+  text-decoration: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease; 
+  z-index: 1000; 
+}
+
+.back-to-top:hover {
+  background-color: rgba(74, 199, 89, 0.8); 
+}
+
+.back-to-top:active {
+  transform: scale(0.8); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! блок логотипа в futer AND HEADER */
 .logo {
     display: flex;
     align-items: center;
@@ -442,116 +653,6 @@ canvas {
 
 
 
-
-
-
-
-
-
-
-
-/* TODO!!! СЕКЦИЯ О НАС */
-.wrapper-about {
-  width: 100%;
-}
-.about-header {
-  color: rgba(0, 0, 0, 0.08);
-  font-size: 3rem;
-  line-height: 0.6;
-  text-align: center;
-}
-
-
-/* Основные стили для карточки */
-
-.wrapper-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content:space-around;
-  padding-bottom: 3rem;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-  .card {
-    max-width: 90%;
-    margin: 10px auto;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* TODO!!! НИЖНЯЯ СТРОКА FUTER */
 .wrapper-contact-info {
     width: 100%;
@@ -578,12 +679,7 @@ canvas {
 
 
 
-
-
-
-
-
-/* TODO!!! Блок куки */
+/* TODO!!! Блок куки FUTER */
 #cookie-banner.hidden {
     display: none;
 }
