@@ -1,18 +1,17 @@
-/* body {
-    background-color: rgb(77, 91, 124);
-} */
 
-/* 4D5B7C */
+
 
 
 
 /* TODO!!!! бУРГЕР И МЕНЮ */
-
-
   
   header {
     background-color: #333;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   nav {
@@ -23,7 +22,7 @@
   
   nav .logo {
     color: white;
-    font-size: 1.5em;
+    font-size: 0.9rem;
     font-weight: bold;
   }
   
@@ -38,15 +37,26 @@
     margin-left: 20px;
   }
   
+
   .nav-list a {
+    position: relative;
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
   }
   
-  .nav-list a:hover {
-    color: #4caf50;
+  .nav-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #4caf50;
+    transition: width 0.5s ease; 
+  }
+  
+  .nav-list a:hover::after {
+    width: 100%; 
   }
   
 
@@ -129,9 +139,58 @@
 
 
 
+/* TODO!!! LOGO TELEGRAMM */
+
+.header-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #333;
+  gap: 5px;
+}
+
+ 
+
+.header-logo-contact {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  text-decoration: none;
+  color: #2da4e1;
+  font-size: 0.7rem;
+  transition: color 0.3s ease;
+}
+ 
+.social-link:nth-child(2) {
+  color: #4ac759;
+}
 
 
+.social-link img {
+  width: 12px; 
+  height: 12px;
+  transition: transform 0.3s ease;
+}
+.social-link img:hover {
+  transform: scale(1.5);
+}
 
+.header-phone a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+.header-phone a:hover {
+  color: #4caf50;
+}
 
 
 
@@ -156,6 +215,59 @@ canvas {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! Стрелка наверх фиксированная */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px; 
+  right: 10px; 
+  width: 50px;  
+  height: 50px; 
+  background-color: rgba(74, 199, 89, 0.4); 
+  color: white; 
+  text-align: center;
+  line-height: 50px; 
+  font-size: 24px; 
+  border-radius: 50%;
+  text-decoration: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease; 
+  z-index: 1000; 
+}
+
+.back-to-top:hover {
+  background-color: rgba(74, 199, 89, 0.8); 
+}
+
+.back-to-top:active {
+  transform: scale(0.8); 
+}
 
 
 
@@ -326,6 +438,102 @@ canvas {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO!!! СЕКЦИЯ О НАС */
+.wrapper-about {
+  width: 100%;
+}
+.about-header {
+  color: rgba(0, 0, 0, 0.08);
+  font-size: 3rem;
+  line-height: 0.6;
+  text-align: center;
+}
+
+
+/* Основные стили для карточки */
+
+.wrapper-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:space-around;
+  padding-bottom: 3rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
