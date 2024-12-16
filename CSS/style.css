@@ -271,15 +271,16 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   margin-bottom: 10px; /* Разделение элементов */
 }
 
+
+
 .checklist li::before {
-  content: "✔"; /* Галочка */
+  content: "\2714"; /* Unicode галочки */
   position: absolute;
-  left: 0; /* Позиционирование маркера слева */
-  color: white; /* Цвет галочки */
-  font-size: 16px; /* Размер */
+  left: 0;
+  color: #ffffff; /* Белый цвет */
+  font-size: 16px;
   line-height: 1;
 }
-
 
  
 
