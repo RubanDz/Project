@@ -15,26 +15,83 @@ burger.addEventListener('click', () => {
 
 
 
-// TODO!!! Этапы разработки сайта
-
-function showStep(step) {
-  
-  const allSteps = document.querySelectorAll('.step-content');
-
-  const stepTabs = document.querySelectorAll('.steps li');
-
- 
-  allSteps.forEach((content, index) => {
-      content.style.display = index + 1 === step ? 'block' : 'none';
-  });
-
-  stepTabs.forEach((tab, index) => {
-      tab.classList.toggle('active', index + 1 === step);
-  });
-}
 
 
-document.addEventListener('DOMContentLoaded', () => showStep(1));
+
+
+
+// // TODO!!!! Canvas
+
+// // JavaScript to create a dynamic gradient background
+// const canvas = document.getElementById('colorCanvas');
+// const ctx = canvas.getContext('2d');
+
+// // Set canvas dimensions
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+
+// let gradientOffset = 0;
+
+// // Function to draw a dynamic gradient
+// function drawDynamicGradient() {
+//     gradientOffset += 0.005; // Controls the speed of the gradient's movement
+//     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+
+//     gradient.addColorStop(0, `hsl(${(gradientOffset * 100) % 360}, 70%, 60%)`);
+//     gradient.addColorStop(1, `hsl(${(gradientOffset * 100 + 180) % 360}, 70%, 60%)`);
+
+//     ctx.fillStyle = gradient;
+//     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+//     requestAnimationFrame(drawDynamicGradient);
+// }
+
+// // Resize handler
+// window.addEventListener('resize', () => {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+// });
+
+// drawDynamicGradient();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

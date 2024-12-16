@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
   }
   
   nav {
@@ -214,204 +215,270 @@
 
 
 
+/* TODO!!! Canvas и content */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-/* TODO!!! Этапы разработки сайта */
-/* .wrapper-step-dev {
-   background-color: rgb(249, 250, 254);
-} */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  /* background-color: rgb(249, 250, 254); */
-  /* background-color: #1E90FF; */
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding-top: 5rem;
-}
-
-.title {
-  text-align: center;
-  color: rgba(47, 58, 79, 0.7);
-  transform: translateY(-50px);
-  opacity: 0;
-  animation: slideIn 1.5s ease-out forwards;
-
-  
-}
-
-/* .title {
-  transform: translateY(-50px);
-  opacity: 0;
-  animation: slideIn 1.5s ease-out forwards;
-} */
-
-@keyframes slideIn {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-
-
-
-
-
-.steps-container {
-  display: flex;
-  /* background-color: #1E90FF; */
-}
-
-.steps {
-  width: 30%;
-  list-style-type: none;
-  padding: 0;
-}
-
-.steps li {
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.steps li.active {
-  background-color: #d91719;
-  color: #fff;
-}
-
-.steps li:hover {
-  background-color: #d91719;
-  color: #fff;
-}
-
-.content {
-  width: 70%;
-  padding: 20px;
-}
-
-.step-content {
-  display: none; 
-}
-.step-content > p {
-  padding-top: 1rem;
-  text-align: justify;
-}
-
-.step-content h2 {
-  color: #d91719;
-  /* color: #4caf50; */
-}
-
-.step-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.step-content li {
-  padding-left: 20px;
-  position: relative;
-  margin: 10px 0;
-}
-
-.step-content li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: #4caf50;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif; /* Явно задаем шрифт */
-}
-
-
-
-.participants {
-  text-align: center;
-  margin-top: 20px;
-}
-.participants > h3 {
-  color: rgba(47, 58, 79, 0.7);
- 
-}
-
-.roles {
+.section-header-wrapper {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url('/images-networks/first_screen_dev.webp');
+             
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.role {
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
-  flex: 1;
-  margin: 5px;
-  text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+.content > h1 {
+  font-size: 4rem;
+  color: #FFFFFF;
+text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+
+
+.content-list {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+/* Стиль для списка с галочками */
+.checklist {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 25px; /* Отступ для галочки */
+  margin-bottom: 10px; /* Разделение элементов */
+}
+
+.checklist li::before {
+  content: "✔"; /* Галочка */
+  position: absolute;
+  left: 0; /* Позиционирование маркера слева */
+  color: white; /* Цвет галочки */
+  font-size: 16px; /* Размер */
+  line-height: 1;
+}
+
+
+ 
+
+
+  
+/* форма на 1 первой странице */
+
+/* Общее */
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url('background-image.jpg') center/cover no-repeat; */
+  height: 100vh;
+}
+
+
+
+.feedback__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.feedback__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Поле формы */
+.feedback__field {
+  margin-bottom: 15px;
+}
+
+.feedback__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.feedback__input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+/* Кнопка */
+.feedback__button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.feedback__button:hover {
+  background-color: darkred;
+}
+
+/* Чекбокс и политика */
+.feedback__consent {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.feedback__checkbox {
+  margin-right: 5px;
+}
+
+.feedback__policy-link {
+  color: #55aaff;
+  text-decoration: underline;
+}
+
+/* Подсказка */
+.feedback__note {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.feedback__required {
+  color: red;
+}
+
+
 
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
+  .content > h1 {
+    font-size: 2rem;
   }
-  .steps-container {
-      flex-direction: column; 
+  .section-header-wrapper {
+    justify-content: center;
+    padding-top: 2rem;
   }
-
-  .steps, .content {
-      width: 100%; 
-  }
-
-  .steps li {
-      text-align: center; 
-      padding: 10px;
-  }
-
-  .roles {
-      flex-direction: column;
-  }
-
-  .role {
-      margin: 5px 0; 
-  }
-
-  /* .title {
-      font-size: 1rem; 
-  } */
-  .step-content h2 {
-    font-size: 0.8rem;
+  .feedback {
+    height: auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
 
 
 
