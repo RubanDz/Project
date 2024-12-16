@@ -230,6 +230,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  padding-top: 50px;
 }
 
 
@@ -388,6 +389,9 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   }
   .feedback {
     height: auto;
+  }
+  .content-list {
+    font-weight: normal;
   }
 }
 
