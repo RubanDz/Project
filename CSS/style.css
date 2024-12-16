@@ -224,7 +224,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  background: url('/images-networks/first_screen_dev.webp');
+  background: url('../images-networks/first_screen_dev.webp');
              
   background-repeat: no-repeat;
   background-size: cover;
