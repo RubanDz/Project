@@ -393,6 +393,9 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   .content-list {
     font-weight: normal;
   }
+  .feedback__container {
+    width: 350px;
+  }
 }
 
 
