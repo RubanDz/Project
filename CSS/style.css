@@ -414,6 +414,65 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 /* TODO!!! mAIN WRAPPER */
 /* styles.css */
 
+/* .section-main-wrapper {
+  background-color: #FAF9F6 ;
+} */
+
+
+
+.content-main-wrapper {
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background: url('../images-networks/first_screen_dev.webp'); */
+             
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  /* height: 100vh;
+  padding-top: 50px; */
+
+
+}
+.content__color {
+  color: rgb(77, 91, 124)!important;
+  text-shadow: none!important;
+}
+
+.checklist__color li::before {
+  content: "\2714"; /* Unicode галочки */
+  position: absolute;
+  left: 0;
+  color: #4caf50; /* Белый цвет */
+  font-size: 16px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .block {
@@ -549,7 +608,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Кнопка */
-.product-card__button {
+/* .product-card__button {
   display: inline-block;
   font-size: 16px;
   color: #fff;
@@ -559,20 +618,38 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-}
+} */
 
-.product-card__button:hover {
+/* .product-card__button:hover {
   background-color: #21867a;
-}
+} */
 
 /* Модификатор кнопки */
-.product-card__button--buy {
-  background-color: #e76f51; /* Оранжевый цвет кнопки */
+/* .product-card__button--buy {
+  background-color: #e76f51; 
+} */
+
+/* .product-card__button--buy:hover {
+  background-color: #d65a3a; 
+} */
+
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  /* background-color: #007BFF; */
+  background: #28A745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
-.product-card__button--buy:hover {
-  background-color: #d65a3a; /* Темнее при наведении */
+.button-link:hover {
+  background-color: #218838;
 }
+
 
 
 @media (max-width: 768px) {
