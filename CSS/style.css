@@ -215,7 +215,7 @@
 
 
 
-/* TODO!!! Canvas и content */
+/* TODO!!! header wrapper*/
 
 
 
@@ -411,6 +411,36 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
 
 
+/* TODO!!! mAIN WRAPPER */
+/* styles.css */
+
+
+
+.block {
+  text-align: center; /* Выравнивание по центру */
+  margin: 50px auto; /* Отступы сверху/снизу */
+  max-width: 700px; /* Ограничение по ширине */
+  padding: 20px; /* Внутренние отступы */
+}
+
+.block__line {
+  width: 60%; /* Длина линии */
+  height: 4px; /* Толщина линии */
+  background-color: #0056b3; /* Цвет линии */
+  margin: 0 auto 10px auto; /* Отступ снизу */
+}
+
+.block__title {
+  font-weight: bold; /* Жирный текст */
+  font-size: 1.7rem; /* Размер шрифта */
+  margin: 10px 0; /* Отступы заголовка */
+}
+
+.block__text {
+  font-size: 1.1rem; /* Размер шрифта текста */
+  line-height: 1.6; /* Межстрочный интервал */
+  margin: 0 auto; /* Автоматический отступ по краям */
+}
 
 
 
@@ -420,6 +450,140 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* блок карточек с товаром */
+
+
+.product-card-wrapper {
+  display: flex; /* Включаем флекс-контейнер */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  justify-content: space-between; /* Равномерное распределение карточек по рядам */
+  gap: 20px; /* Отступ между карточками */
+  max-width: 960px; /* Ширина контейнера */
+  margin: 50px auto; /* Центрируем контейнер по горизонтали */
+  padding: 10px;
+ 
+}
+
+
+
+
+
+
+/* Карточка товара */
+.product-card {
+  background-color: #fff; /* Белый фон */
+  border: 1px solid #e0e0e0; /* Граница карточки */
+  border-radius: 8px; /* Скругление углов */
+  width: 300px; /* Фиксированная ширина */
+  overflow: hidden; /* Обрезка изображения */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Центрирование контента */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Эффект при наведении */
+}
+
+/* Изображение товара */
+.product-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Масштабировать изображение без искажений */
+}
+
+/* Информация о товаре */
+.product-card__info {
+  padding: 15px;
+}
+
+/* Название товара */
+.product-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Описание товара */
+.product-card__description {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 15px;
+}
+
+/* Цена товара */
+.product-card__price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+/* Кнопка */
+.product-card__button {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2a9d8f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-card__button:hover {
+  background-color: #21867a;
+}
+
+/* Модификатор кнопки */
+.product-card__button--buy {
+  background-color: #e76f51; /* Оранжевый цвет кнопки */
+}
+
+.product-card__button--buy:hover {
+  background-color: #d65a3a; /* Темнее при наведении */
+}
+
+
+@media (max-width: 768px) {
+  .product-card-wrapper {
+    justify-content: center;
+  }
+  .product-card {
+    width: 350px;
+    
+  }
+}
 
 
 

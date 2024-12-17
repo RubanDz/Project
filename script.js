@@ -20,6 +20,17 @@ burger.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+// TODO!!! Печатающийся текст
+
+
+
+
+
 // // TODO!!!! Canvas
 
 // // JavaScript to create a dynamic gradient background
