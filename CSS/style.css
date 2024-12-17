@@ -384,15 +384,19 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   .content > h1 {
     font-size: 2rem;
   }
+  .content {
+    padding-top: 2rem;
+  }
   .section-header-wrapper {
     justify-content: center;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
   .feedback {
     height: auto;
   }
   .content-list {
     font-weight: normal;
+    font-size: 1rem;
   }
   .feedback__container {
     width: 350px;
