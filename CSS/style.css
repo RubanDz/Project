@@ -436,6 +436,20 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
 
 }
+.content__location {
+  align-self: self-end;
+  transition: transform 0.5s ease;
+}
+.content__location > h2::before {
+  content: "\2B50"; /* Код Юникод звёздочки */
+  color: #FFD700;
+  font-size: 24px;
+}
+
+
+.content__location:hover {
+  transform: scale(1.3);
+}
 .content__color {
   color: rgb(77, 91, 124)!important;
   text-shadow: none!important;
@@ -450,11 +464,17 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   line-height: 1;
 }
 
+/* .content__location {
+  align-self: self-end;
+} */
 
 
 
-
-
+@media (max-width: 768px) {
+  .content__location {
+    padding-top: 1rem;
+  }
+}
 
 
 
