@@ -776,7 +776,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
 /* TODO!!!! а это секция разработки */
 /* Общие стили для секции */
-.project-steps {
+/* .project-steps {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -785,7 +785,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Заголовок */
+
 .project-steps h3 {
   font-size: 2rem;
   color: #333;
@@ -793,7 +793,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
 }
 
-/* Шаблон для шагов */
+
 .step {
   background-color: #fff;
   margin-bottom: 20px;
@@ -806,7 +806,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 .step h4 {
   font-size: 1.4rem;
   color: rgb(77, 91, 124);
-  /* background-color: rgb(77, 91, 124); */
+
   margin-bottom: 10px;
 }
 
@@ -822,7 +822,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для ссылок */
+
 .download-links {
   display: flex;
   flex-direction: column;
@@ -853,7 +853,7 @@ text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 .span-text-color{
   color: #c93b3b;
   font-weight: bolder;
-}
+} */
 
 
 
